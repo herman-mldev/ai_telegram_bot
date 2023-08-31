@@ -45,6 +45,9 @@ This bot includes 3 commands: /start /help /train. Where /start is the basic com
 │       │   └── trainModel.py
 │       ├── pipe/
 │       │   └── pipeline.py
+│       ├── validation/
+│       │   ├── requestValidation.py
+│       │   └── responseModelValidation.py
 │       ├── tools/
 │       │   └── collector.py
 │       ├── server.py
@@ -53,7 +56,6 @@ This bot includes 3 commands: /start /help /train. Where /start is the basic com
 │       └── requirements.txt
 └── Docker.compose.yaml
 ```
-
 
 ## Getting Started
 - with Python Virtual Environment in both folders:
@@ -156,6 +158,9 @@ docker-compose up
 │       │   └── trainModel.py
 │       ├── pipe/
 │       │   └── pipeline.py
+│       ├── validation/
+│       │   ├── requestValidation.py
+│       │   └── responseModelValidation.py
 │       ├── tools/
 │       │   └── collector.py
 │       ├── server.py

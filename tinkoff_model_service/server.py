@@ -5,7 +5,6 @@ from classifier.classifier import Classifier
 from classifier.trainModel import TrainModel
 
 
-
 app = Quart(__name__)
 pipelineInstance = Pipeline("tinkoff-ai/ruDialoGPT-medium", "tinkoff-ai/ruDialoGPT-medium")
 requestsCollectorInstance = Collector("../data/telegram.json")

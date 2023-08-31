@@ -1,0 +1,38 @@
+version: "2.4"
+services: 
+  bot:
+    image: bot:latest
+    container_name: bot-container
+    build:
+      context: ./tinkoff_bot
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./tinkoff_bot/security:/tinkoff_bot/security
+      - ./tinkoff_bot/mainModule.py:/tinkoff_bot/mainModule.py
+      - ./tinkoff_bot/commands:/tinkoff_bot/commands
+      - ./tinkoff_bot/handlers:/tinkoff_bot/handlers
+    networks: 
+      - dev_network
+  model:
+    image: model:latest
+    container_name: model-container
+    build:
+      context: ./tinkoff_model_service
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./tinkoff_model_service/server.py:/tinkoff_model_service/server.py
+      - ./tinkoff_model_service/pipe:/tinkoff_model_service/pipe
+      - ./tinkoff_model_service/tools:/tinkoff_model_service/tools
+      - ./tinkoff_model_service/validation:/tinkoff_model_service/validation
+      - ./tinkoff_model_service/data:/tinkoff_model_service/data
+      - ./tinkoff_model_service/classifier:/tinkoff_model_service/classifier
+    networks: 
+      - dev_network
+    depends_on:
+    - bot
+    ports:
+      - "5000:5000"
+
+networks:
+  dev_network:
+    driver: bridge
