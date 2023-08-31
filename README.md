@@ -10,7 +10,6 @@ Architecture: [figma](https://www.figma.com/file/YsEBTxV8uMSCKVrR0Dv004/AI_teleg
 - [Getting Started](#getting_started)
 - [Installation](#installation)
 
-![Alt text](image.png)
 ## Description
 Telegram bot written on machine learning model from Tinkoff. The purpose of the bot is to compose a pleasant communication with the user. This bot is trained on the Tinkoff model, it also takes the arithmetic mean roughly speaking of the data that more suitable for the user's request from my dataset, which includes the data of correspondence of one chat from telegram, as well as this dataset collects all user requests and responses of the Tinkoff model.
 
@@ -121,7 +120,7 @@ docker-compose up
 - [Стартуем!](#стартуем!)
 - [Установка](#установка)
 
-
+![Alt text](image.png)
 ## Описание
 Телеграмм-бот, написанный на машинном обучении модели от Тинькофф. Цель бота - составить приятное общение с пользователем. Данный бот обучается на модели Тинькофф, также берет среднее арифметическое грубо говоря из данных, которые более подходят под запрос пользователя из моего dataset, который включает в себя данные переписки одного чата из телеграмм, а также этот dataset собирает все запросы пользователей и ответы Тинькофф модели.
 
