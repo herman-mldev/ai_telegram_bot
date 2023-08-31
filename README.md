@@ -10,7 +10,7 @@ Architecture: [figma](https://www.figma.com/file/YsEBTxV8uMSCKVrR0Dv004/AI_teleg
 - [Getting Started](#getting_started)
 - [Installation](#installation)
 
-
+![Alt text](image.png)
 ## Description
 Telegram bot written on machine learning model from Tinkoff. The purpose of the bot is to compose a pleasant communication with the user. This bot is trained on the Tinkoff model, it also takes the arithmetic mean roughly speaking of the data that more suitable for the user's request from my dataset, which includes the data of correspondence of one chat from telegram, as well as this dataset collects all user requests and responses of the Tinkoff model.
 
