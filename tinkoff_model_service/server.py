@@ -1,7 +1,7 @@
 from quart import Quart, request, jsonify
 from pipe.pipeline import Pipeline 
 from tools.collector import Collector
-from classifier.trainClassifier import Classifier
+from classifier.classifier import Classifier
 from classifier.trainModel import TrainModel
 
 
