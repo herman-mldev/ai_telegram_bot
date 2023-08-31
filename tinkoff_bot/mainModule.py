@@ -3,7 +3,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters
 from security.tokenManager import TokenManager
 from commands.commands import Commands
 from handlers.handlers import Handlers
-from handlers.Errors.errors import Errors
+from handlers.errors.errors import Errors
 
 
 class MainModule:
