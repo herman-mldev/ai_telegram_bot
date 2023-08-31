@@ -106,7 +106,7 @@ python server.py
 - Local Machine (Docker) in root directory:
 ```bash
 docker login
-docker-compose up
+docker compose up
 ```
 
 
@@ -220,7 +220,7 @@ python server.py
 - Локальная Машина (Docker) в корневой директории:
 ```bash
 docker login
-docker-compose up
+docker compose up
 ```
 
 
