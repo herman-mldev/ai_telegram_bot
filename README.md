@@ -146,7 +146,7 @@ docker compose up
 │   │   │   │   └── errors.py
 │   │   │   └── handlers.py
 │   │   ├── security/
-│   │   │   ├── token.txt # вы должны вставить свой токен
+│   │   │   ├── token.txt #вы должны вставить свой токен
 │   │   │   └── tokenManager.py
 │   │   ├── mainModule.py
 │   │   ├── .gitignore
