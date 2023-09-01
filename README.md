@@ -33,7 +33,7 @@ This bot includes 3 commands: /start /help /train. Where /start is the basic com
 │   │   │   │   └── errors.py
 │   │   │   └── handlers.py
 │   │   ├── security/
-│   │   │   ├── token.txt
+│   │   │   ├── token.txt #you should paste your token
 │   │   │   └── tokenManager.py
 │   │   ├── mainModule.py
 │   │   ├── .gitignore
